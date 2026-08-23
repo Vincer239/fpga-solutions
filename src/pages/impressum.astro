@@ -1,0 +1,47 @@
+---
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+---
+
+<Layout title="Impressum">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Impressum</Fragment>
+      <Fragment slot="desc">Legal Notice</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Angaben gemäß § 5 TMG
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        FPGA Solutions<br>
+        Musterstraße 123<br>
+        12345 Musterstadt<br>
+        Deutschland
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Kontakt
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        E-Mail: info@fpga-solutions.com<br>
+        Telefon: +49 123 456789
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Verantwortlich für den Inhalt
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Gemäß § 55 Abs. 2 RStV:<br>
+        [Name], [Address]
+      </p>
+    </div>
+  </Container>
+</Layout>
+

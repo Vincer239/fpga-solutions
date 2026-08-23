@@ -1,0 +1,90 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import PricingCard from "@/components/pricing.astro";
+
+const pricing = [
+  {
+    name: "Consulting",
+    price: "70€/h",
+    popular: false,
+    features: [
+      "Whatever you wanna talk about",
+      "feasibility evaluation",
+      "requirements evaluation",
+      // "Lifetime free",
+      // "Up to 3 users",
+      // "Unlimited Pages",
+      // "Astro Sub domain",
+      // "Basic Integrations",
+      // "Community Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+  {
+    name: "Assistance",
+    price: {
+      monthly: "10500€/month", // 35h pro Woche x 4,35 Wochenfaktor pro Monat (70€/h)
+      annual: "110000€", // 35 x 4,35 x 60€/h
+      discount: "14%",
+      original: "128000€", // bei 70€/h
+    },
+    popular: true,
+    features: [
+      "All Consulting Features",
+      "Buy your engineer in your project",
+      "Something else",
+      // "Up to 20 users",
+      // "20 Custom domains",
+      // "Unlimited Collaborators",
+      // "Advanced Integrations",
+      // "Priority Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+  {
+    name: "Project Management",
+    price: "Custom",
+    popular: false,
+    features: [
+      "Outsource your project and we manage it",
+      "Of course, that costs more",
+      "depends on open capabilities",
+      // "All Pro Features",
+      // "Unlimited Custom domains",
+      // "99.99% Uptime SLA",
+      // "SAML & SSO Integration",
+      // "Dedicated Account Manager",
+      // "24/7 Phone Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
+---
+
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+        You can choose our level of involvement. Pricing is adjusted accordingly.
+      </Fragment>
+    </Sectionhead>
+
+    <div
+      class="grid md:grid-cols-3 gap-10 mx-auto max-w-(--breakpoint-lg) mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
+    </div>
+  </Container>
+</Layout>

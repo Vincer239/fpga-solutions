@@ -1,0 +1,66 @@
+---
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+---
+
+<Layout title="Privacy Policy">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Privacy Policy</Fragment>
+      <Fragment slot="desc">How we handle your data</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Data We Collect
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We collect information you provide directly to us, such as when you create an account, 
+        fill out a form, or communicate with us. This may include your name, email address, 
+        phone number, and any other information you choose to provide.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        How We Use Your Data
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We use the information we collect to provide, maintain, and improve our services, 
+        to communicate with you, and to ensure legal compliance. We do not sell your 
+        personal data to third parties.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Cookies
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We use cookies and similar tracking technologies to improve your browsing experience 
+        on our website. You can control cookies through your browser settings.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Your Rights
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        You have the right to access, correct, or delete your personal data. 
+        Contact us at info@fpga-solutions.com to exercise your rights.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Contact
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        If you have questions about this Privacy Policy, please contact us at 
+        info@fpga-solutions.com.
+      </p>
+    </div>
+  </Container>
+</Layout>

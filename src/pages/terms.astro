@@ -1,0 +1,77 @@
+---
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+---
+
+<Layout title="Terms of Service">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Terms of Service</Fragment>
+      <Fragment slot="desc">The rules for using our services</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Acceptance of Terms
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        By accessing and using our services, you agree to be bound by these Terms of Service. 
+        If you do not agree to these terms, please do not use our services.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Services
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We provide FPGA consulting, development, and integration services. 
+        The specific scope of services is defined in individual contracts 
+        and project agreements.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Intellectual Property
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        All deliverables, designs, and documentation created by us remain our 
+        intellectual property unless otherwise agreed in writing. Client-specific 
+        modifications may be subject to separate licensing terms.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Liability
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our services are provided "as is." We are not liable for any indirect, 
+        incidental, or consequential damages arising from the use of our services. 
+        Total liability is limited to the amount paid for the specific service in question.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Governing Law
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        These Terms of Service are governed by the laws of Germany. 
+        Any disputes shall be resolved in the courts of Germany.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Contact
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        For questions regarding these Terms, please contact us at 
+        info@fpga-solutions.com.
+      </p>
+    </div>
+  </Container>
+</Layout>

@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  // {
+  //   title: "Bring Your Own Framework",
+  //   description:
+  //     "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+  //   icon: "bx:bxs-briefcase",
+  // },
+  // {
+  //   title: "100% Static HTML, No JS",
+  //   description:
+  //     "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+  //   icon: "bx:bxs-window-alt",
+  // },
+  {
+    title: "On-Demand Components",
+    description:
+      "Need some custom IPs and have no clue how to get there? No worries, we help you out.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Broad Integration",
+    description:
+      "We do all embedded platforms from AMD/Xilinx, as well as GateMate chips from ColognChips.",
+    icon: "bx:bxs-bot",
+  },
+  // {
+  //   title: "SEO Enabled",
+  //   description:
+  //     "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+  //   icon: "bx:bxs-file-find",
+  // },
+  {
+    title: "Community",
+    description:
+      "We are recognized within the aviation industry through long years of experience.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Everything you need to push your embedded project over the finish line
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    We can help you with a barrage of problems. No Problem. Just reach out and tell us your needs.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
